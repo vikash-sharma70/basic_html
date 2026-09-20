@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTube - HTML Structure of YouTube</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h1>MyTube</h1>
+
+    <!-- Search bar -->
+    <form action="#" method="get">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="q" placeholder="Search videos">
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Top navigation -->
+    <nav>
+      <a href="#">Upload</a> |
+      <a href="#">Notifications</a> |
+      <a href="#">Sign in</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside>
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shorts</a></li>
+      <li><a href="#">Subscriptions</a></li>
+    </ul>
+
+    <h2>You</h2>
+    <ol>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Watch Later</a></li>
+      <li><a href="#">Liked Videos</a></li>
+    </ol>
+  </aside>
+
+  <hr>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+
+    <!-- Section 1: Recommended videos -->
+    <section>
+      <h2>Recommended Videos</h2>
+
+      <article>
+        <figure>
+          <img src="https://picsum.photos/300/170?random=1" alt="HTML tutorial thumbnail" width="300" height="170">
+          <figcaption>
+            <h3><a href="#">HTML Full Course for Beginners</a></h3>
+            <p><strong>Code Academy</strong> - 1.2M views - 2 weeks ago</p>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <figure>
+          <img src="https://picsum.photos/300/170?random=2" alt="Node.js tutorial thumbnail" width="300" height="170">
+          <figcaption>
+            <h3><a href="#">Node.js in 1 Hour</a></h3>
+            <p><strong>Dev Guru</strong> - 800K views - 1 month ago</p>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <figure>
+          <img src="https://picsum.photos/300/170?random=3" alt="Travel vlog thumbnail" width="300" height="170">
+          <figcaption>
+            <h3><a href="#">Trip to the Mountains</a></h3>
+            <p><strong>Travel Diaries</strong> - 300K views - 3 days ago</p>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Video player -->
+    <section>
+      <h2>Now Playing</h2>
+      <video controls width="400" poster="https://picsum.photos/400/225?random=4">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>HTML Full Course for Beginners</h3>
+      <p>
+        Learn the <em>basics of HTML</em> like headings, paragraphs, lists, links,
+        images, tables and forms in this <strong>beginner friendly</strong> video.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Trending table -->
+    <section>
+      <h2>Trending Channels</h2>
+      <table border="1" cellpadding="6">
+        <caption>Top 3 channels this week</caption>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Channel</th>
+            <th>Subscribers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Code Academy</td>
+            <td>5M</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Dev Guru</td>
+            <td>3M</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Travel Diaries</td>
+            <td>2M</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 4: Comment form -->
+    <section>
+      <h2>Leave a Comment</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="category">Video category:</label>
+          <select id="category" name="category">
+            <option value="education">Education</option>
+            <option value="travel">Travel</option>
+            <option value="music">Music</option>
+          </select>
+        </p>
+        <p>
+          Did you like the video?
+          <input type="radio" id="yes" name="like" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="like" value="no">
+          <label for="no">No</label>
+        </p>
+        <p>
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Subscribe to the channel</label>
+        </p>
+        <p>
+          <label for="comment">Comment:</label><br>
+          <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+        </p>
+        <button type="submit">Post Comment</button>
+      </form>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <nav>
+      <a href="#">About</a> |
+      <a href="#">Press</a> |
+      <a href="#">Copyright</a> |
+      <a href="#">Contact us</a> |
+      <a href="#">Privacy</a>
+    </nav>
+    <p><small>&copy; 2026 MyTube. Made with HTML only.</small></p>
+  </footer>
+
+</body>
+</html>
